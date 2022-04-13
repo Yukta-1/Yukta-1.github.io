@@ -1,0 +1,246 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../static/index.js"></script>
+    <style>
+        .desc {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .card {
+            width: 30%;
+            border: solid 2px black;
+            border-radius: 20px;
+            height: 70vh;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+
+        }
+
+        .card img {
+            height: 70px;
+            /* max-width: 80%; */
+            margin: 10px;
+        }
+
+        .card:hover {
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+
+        #working {
+            background-color: #F9F6F2;
+            /* height: 350px; */
+            /* padding-top: 20px; */
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #working h2 {
+            padding-bottom: 20px;
+            font-size: 1.9rem;
+        }
+
+        ul li {
+            text-align: left;
+        }
+
+        ul {
+            margin-left: 20px;
+        }
+
+        .working-image {
+            width: 100%;
+        }
+
+        .working-image img {
+            width: 100%;
+        }
+    </style>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,400&display=swap");
+
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 0px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        *::selection {
+            background-color: rgba(0, 192, 192, 0.685);
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.952);
+            color: white;
+            border-bottom: solid 2px rgb(77, 77, 77);
+            padding: 10px;
+            /* margin-bottom: 20px; */
+        }
+
+        .compName {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            padding-bottom: 0px;
+        }
+
+        .compName img {
+            height: 75px;
+            width: auto;
+            padding: 5px;
+            filter: grayscale(100%);
+            /* filter: invert(1); */
+        }
+
+        #navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 10px;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            z-index: 10;
+        }
+
+        #navbar ul {
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0px;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+            padding: 0px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        #about {
+            box-sizing: border-box;
+            border-right: solid 1.5px gray;
+            border-left: solid 1.5px gray;
+        }
+
+        #contact {
+            box-sizing: border-box;
+            /* border-right: solid 1.5px gray; */
+            border-left: solid 1.5px gray;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(134, 134, 134);
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgb(36, 36, 36);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            height: 50px;
+
+        }
+
+        body::-webkit-scrollbar {
+            width: 12px;
+            /* width of the entire scrollbar */
+        }
+
+        body::-webkit-scrollbar-track {
+            background: rgb(212, 212, 212);
+            /* color of the tracking area */
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.85);
+            /* color of the scroll thumb */
+            border-radius: 20px;
+            /* roundness of the scroll thumb */
+            border: 2px solid rgb(212, 212, 212);
+            /* creates padding around scroll thumb */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="compName"><img src="../static/dono_logo.png" alt="Dono">
+            <h1>DONO</h1>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="home.html">Home</a> </li>
+            <li><a href="about.html" id="about">About Us</a></li>
+            <li><a href="donate.html" id="donate">Donate</a></li>
+            <li><a href="contact.html" id="contact">Contact Us</a></li>
+            <li><a href="login.html" id="contact">Login</a></li>
+        </ul>
+    </nav>
+    <section id="working">
+        <h2>How It All Works </h2>
+        <div class="desc">
+            <div class="card">
+                <h3>Restaurant End</h3><img src="../static/hunger.png" alt="hunger">
+                <ul>
+                    <li>Restaurants can sign up for the program.</li>
+                    <li>Everyday they must provide meals that include leftover food, simple dishes from leftover
+                        ingredients and simple things like rice to make a meal reasonably complete.</li>
+                    <li>They can use the money they get for extra ingredients, packaging, fair salary for the staff
+                        needed.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>User End</h3><img src="../static/dustbin.png" alt="dustbin">
+                <ul>
+                    <li>Users can find their favourite restaurants on the app. Incase they don't, they can talk to the
+                        restaurant about signing up for the program.</li>
+                    <li>Users donate the amount they want. More research needs to be done to finalize the split of
+                        donations between the restaurant, delivery and Dono.</li>
+                    <li>There will be rewards (discount coupons to that restaurant) based on donations made to create
+                        incentive.</li>
+                </ul>
+            </div>
+            <div class="card">
+                <h3>Delivery End</h3><img src="../static/discount.png" alt="discount">
+                <ul>
+                    <li>We can either create our own delivery network, or partner with a service like Dunzo.</li>
+                    <li>We shall partner with NGOs to find places that need food</li>
+                    <li>The drivers shall be paid fairly.</li>
+                    <li>They shall deliver to places such as orphanages, and individual homeless people on the street.
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    <footer> © 2022 DONO - 'Donate for Rebate'. All rights reserved.</footer>
+</body>
+
+</html>
