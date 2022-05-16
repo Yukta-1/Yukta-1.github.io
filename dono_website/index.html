@@ -1,0 +1,393 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DONO</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="../static/index.js"></script>
+    <style>
+        /* navbar section */
+        /* @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,400&display=swap');
+    *{
+        margin: 0px;
+        box-sizing: border-box;
+        padding: 0px;
+        font-family: 'Montserrat', sans-serif;
+    }
+    *::selection{
+        background-color: rgba(0, 128, 128, 0.685);
+    }
+    header{
+        background-color: rgba(0, 0, 0, 0.952);
+        color: white;
+        border-bottom:solid 2px rgb(77, 77, 77);
+        padding: 10px;
+        margin-bottom: 20px;
+    }
+    
+    .compName{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .compName img{
+        height: 60px;
+        width: auto;
+        filter: invert(1);
+    }
+    #navbar{
+        background-color: rgba(0, 0, 0, 0.85);
+        padding: 10px;
+        position: sticky;
+        top: 0px;
+        width:100%;
+    }
+    #navbar ul{
+        display: flex;
+        justify-content: center;
+        padding: 0px;
+    }
+    #navbar li{
+        list-style: none;
+        padding: 0px;
+    
+    }
+    #navbar li a{
+        text-decoration: none;
+        font-size: 1.2rem;
+        color: rgb(255, 255, 255);
+        padding: 25px;
+    }
+    #navbar ul li a:hover{
+        color: rgb(134, 134, 134);
+        text-decoration:underline;
+    } */
+
+        #introSection {
+            display: flex;
+            flex-direction: column;
+            /* padding: 10px 200px; */
+            justify-content: center;
+            align-items: center;
+            height: 287px;
+            color: white;
+            text-align: center;
+            font-size: 3rem;
+            font-weight: 1000;
+        }
+
+        #introSection p {
+            font-size: 1.5rem;
+            padding: 20px 200px;
+        }
+
+        #introSection:before {
+            content: "";
+            background: url('/static/people_eating.png') no-repeat center center/cover;
+            filter: brightness(65%);
+            position: absolute;
+            top: 0px;
+            left: 0px;
+            height: 470px;
+            width: 100%;
+            z-index: -1;
+            opacity: 0.9;
+        }
+
+        #missionSection {
+            background-color: #F9F6F2;
+            /* height: 350px; */
+            /* padding-top: 20px; */
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #missionSection h2 {
+            padding-bottom: 20px;
+            font-size: 1.9rem;
+        }
+
+        .desc {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 100%;
+            justify-content: space-around;
+        }
+
+        .card {
+            width: 30%;
+            border: solid 2px black;
+            border-radius: 20px;
+            height: fit-content;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0px 0px 10px gray;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .card img {
+            height: 70px;
+            /* max-width: 80%; */
+            margin: 10px;
+        }
+
+        .card:hover {
+            transition: 0.5s;
+            transform: scale(1.1);
+        }
+
+        #sponsorSection {
+            background-color: #E1DBD6;
+            /* height: 350px; */
+            /* padding-top: 20px; */
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            padding: 20px;
+        }
+
+        #sponsorSection h2 {
+            padding-bottom: 20px;
+            font-size: 1.9rem;
+        }
+
+        /* footer{
+        background-color: rgb(36, 36, 36);
+        color: white;
+        padding:15px;
+        text-align: center;
+        height: 50px;
+    } */
+
+        .image_big img {
+            height: 150px;
+            /* max-width: 80%; */
+            margin: 10px;
+            border-radius: 15px;
+        }
+
+        .typewriter h1 {
+            text-align: center;
+            font-size: 2.3rem;
+            overflow: hidden;
+            /* Ensures the content is not revealed until the animation */
+            border-right: .15em solid rgb(0, 0, 0);
+            /* The typwriter cursor */
+            white-space: nowrap;
+            /* Keeps the content on a single line */
+            margin: 0 auto;
+            /* Gives that scrolling effect as the typing happens */
+            /* letter-spacing: .15em; Adjust as needed */
+            animation:
+                typing 3.3s steps(50, end),
+                blink-caret .75s step-end infinite;
+        }
+
+
+        /* The typing effect */
+        @keyframes typing {
+            from {
+                width: 0
+            }
+
+            to {
+                width: 100%
+            }
+        }
+
+        /* The typewriter cursor effect */
+        @keyframes blink-caret {
+
+            from,
+            to {
+                border-color: transparent
+            }
+
+            50% {
+                border-color: rgb(0, 0, 0);
+            }
+        }
+    </style>
+    <style>
+        @import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,400;1,100;1,400&display=swap");
+
+        * {
+            margin: 0px;
+            box-sizing: border-box;
+            padding: 0px;
+            font-family: "Montserrat", sans-serif;
+        }
+
+        *::selection {
+            background-color: rgba(0, 192, 192, 0.685);
+        }
+
+        header {
+            background-color: rgba(0, 0, 0, 0.952);
+            color: white;
+            border-bottom: solid 2px rgb(77, 77, 77);
+            padding: 10px;
+            /* margin-bottom: 20px; */
+        }
+
+        .compName {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 5px;
+            padding-bottom: 0px;
+        }
+
+        .compName img {
+            height: 75px;
+            width: auto;
+            padding: 5px;
+            filter: grayscale(100%);
+            /* filter: invert(1); */
+        }
+
+        #navbar {
+            background-color: rgba(0, 0, 0, 0.85);
+            padding: 10px;
+            position: sticky;
+            top: 0px;
+            width: 100%;
+            z-index: 10;
+        }
+
+        #navbar ul {
+            display: flex;
+            justify-content: center;
+            padding: 0px;
+        }
+
+        #navbar li {
+            list-style: none;
+            padding: 0px;
+        }
+
+        #navbar li a {
+            text-decoration: none;
+            font-size: 1.2rem;
+            color: rgb(255, 255, 255);
+            padding: 0px;
+            padding-right: 20px;
+            padding-left: 20px;
+        }
+
+        #about {
+            box-sizing: border-box;
+            border-right: solid 1.5px gray;
+            border-left: solid 1.5px gray;
+        }
+
+        #contact {
+            box-sizing: border-box;
+            /* border-right: solid 1.5px gray; */
+            border-left: solid 1.5px gray;
+        }
+
+        #navbar ul li a:hover {
+            color: rgb(134, 134, 134);
+            text-decoration: underline;
+        }
+
+        footer {
+            background-color: rgb(36, 36, 36);
+            color: white;
+            padding: 15px;
+            text-align: center;
+            height: 50px;
+
+        }
+
+        body::-webkit-scrollbar {
+            width: 12px;
+            /* width of the entire scrollbar */
+        }
+
+        body::-webkit-scrollbar-track {
+            background: rgb(212, 212, 212);
+            /* color of the tracking area */
+        }
+
+        body::-webkit-scrollbar-thumb {
+            background-color: rgba(0, 0, 0, 0.85);
+            /* color of the scroll thumb */
+            border-radius: 20px;
+            /* roundness of the scroll thumb */
+            border: 2px solid rgb(212, 212, 212);
+            /* creates padding around scroll thumb */
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="compName"><img src="../static/dono_logo.png" alt="Dono">
+            <h1>DONO</h1>
+        </div>
+    </header>
+    <nav id="navbar">
+        <ul>
+            <li><a href="index.html">Home</a> </li>
+            <li><a href="about.html" id="about">About Us</a></li>
+            <li><a href="donate.html" id="donate">Donate</a></li>
+            <li><a href="contact.html" id="contact">Contact Us</a></li>
+            <li><a href="login.html" id="contact">Login</a></li>
+        </ul>
+    </nav>
+    <section class="typewriter" id="introSection">
+        <h1 class="type">Welcome to DONO, a platform where you 'Donate for Rebate'</h1>
+        <p> Our mission is to provide nutritious, quality food to the homeless and while being profitable for both the
+            restaurant and the donors</p>
+    </section>
+    <section id="missionSection">
+        <h2>Our Mission </h2>
+        <div class="desc">
+            <div class="card">
+                <h3>Reduce Hunger</h3><img src="../static/hunger.png" alt="hunger">
+                <p>The Global Hunger Index 2020 ranks India at 101 out of 116 countries in the world. This may not
+                    completely solve the hunger crisis, but it's a step in the right direction.</p>
+            </div>
+            <div class="card">
+                <h3>Reduce Food Wastage</h3><img src="../static/dustbin.png" alt="dustbin">
+                <p>Half a pound of food is wasted per meal in restaurants. We cannot do anything about the food left on
+                    plates, but the leftovers in the kitchen can be put to good use.</p>
+            </div>
+            <div class="card">
+                <h3>Provide Incentives For Donation</h3><img src="../static/discount.png" alt="discount">
+                <p>Dono aims to make means to donate towards hunger causes something you use frequently like the
+                    discount apps, rather than donating money once a year to charity.</p>
+            </div>
+        </div>
+    </section>
+    <section id="sponsorSection">
+        <h2>Our Delivery Partners</h2>
+        <div class="desc">
+            <div class="card image_big"> <img src="../static/dunzo.svg" alt="dunzo">
+                <h3>Dunzo</h3>
+            </div>
+            <div class="card image_big"> <img src="../static/Blinkit.svg" alt="blinkit">
+                <h3>Blinkit</h3>
+            </div>
+            <div class="card image_big"> <img src="../static/BOX8.png" alt="BOX8">
+                <h3>BOX8</h3>
+            </div>
+        </div>
+    </section>
+    <footer> © 2022 DONO - 'Donate for Rebate'. All rights reserved.</footer>
+</body>
+
+</html>
